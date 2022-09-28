@@ -1,0 +1,23 @@
+.body-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+.body-container{
+    background-color: #d3e1e8ae;
+}
+.main-section{
+    margin: 70px 100px;
+}
+.logo{
+    width: 80px;
+}
+.header{
+    display: flex;
+    align-items: center;
+}
+.header h1{
+    color: blueviolet;
+}
+.sidebar{
+    background-color: #ffff;
+}
