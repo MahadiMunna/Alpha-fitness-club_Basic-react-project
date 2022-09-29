@@ -1,8 +1,6 @@
 .body-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
-}
-.body-container{
     background-color: #d3e1e8ae;
 }
 .main-section{
@@ -19,6 +17,8 @@
     color: blueviolet;
 }
 .sidebar{
+    position: sticky;
+    top: 0;
     background-color: #ffff;
     padding: 20px;
 }

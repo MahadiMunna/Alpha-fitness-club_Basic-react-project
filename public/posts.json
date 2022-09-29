@@ -1,0 +1,44 @@
+[
+    {
+      "id": "633534523414014f8bfbd5fa",
+      "img": "../src/images/treadmeals.jpg",
+      "age": 20,
+      "time": 30,
+      "name": "Treadmills"
+    },
+    {
+      "id": "63353452a3f1e9620c5aefbe",
+      "img": "../src/images/elliptical cross trainer.jpg",
+      "age": 26,
+      "time": 36,
+      "name": "Elliptical cross trainer"
+    },
+    {
+      "id": "63353452f9e549110275680c",
+      "img": "../src/images/upright bikes.jpg",
+      "age": 26,
+      "time": 48,
+      "name": "Upright and recumbent bikes"
+    },
+    {
+      "id": "63353452a99383519fe4529e",
+      "img": "../src/images/stair-stepper.jpg",
+      "age": 24,
+      "time": 35,
+      "name": "Stair steppers"
+    },
+    {
+      "id": "63353452e5ceb96b00a2aafe",
+      "img": "../src/images/Summit-Trainer.jpg",
+      "age": 21,
+      "time": 34,
+      "name": "Summit trainers"
+    },
+    {
+      "id": "633534522691c0a6d8932c10",
+      "img": "../src/images/rower.jpg",
+      "age": 27,
+      "time": 48,
+      "name": "Rower"
+    }
+  ]
