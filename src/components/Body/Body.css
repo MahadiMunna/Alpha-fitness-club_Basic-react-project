@@ -26,3 +26,18 @@
     padding: 20px;
 }
 
+@media screen and (max-width:667px) {
+    .body-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        background-color: #d3e1e8ae;
+    }
+    .sidebar{
+        background-color: #ffff;
+        padding: 20px;
+        width: 250px;
+        margin-left: 50px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+}
