@@ -1,0 +1,37 @@
+.post{
+    width: 250px;
+    height: 430px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    position: relative;
+}
+.post img{
+    width: 240px;
+    height: auto;
+    border-radius: 8px;
+    margin: 7px;
+}
+.tool-name{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.post p{
+    margin-left: 0;
+}
+
+.btn-add{
+    border: 0;
+    background-color: blueviolet;
+    color: white;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 15px;
+    padding: 13px;
+    font-size: 15px;
+ 
+}
+.btn-add:hover{
+    background-color: rgb(176, 125, 224);
+    color: blue;
+}
