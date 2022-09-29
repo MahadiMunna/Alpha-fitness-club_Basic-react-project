@@ -3,9 +3,14 @@ import './Sidebar.css';
 import image from '../../images/munna.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation } from '@fortawesome/free-solid-svg-icons';
+import { addToLocalDb } from '../Utilities/Localdb';
 
 const Sidebar = () => {
+    const addToDb = (id) =>{
+        addToLocalDb(id);
+    }
     return (
+        
         <div>
             <div className='profile'>
                 <img src={image} alt="" />
@@ -30,11 +35,11 @@ const Sidebar = () => {
             </div>
             <h3>Add A Break</h3>
             <div className='break-list'>
-                <p className='break-time'>10s</p>
-                <p className='break-time'>20s</p>
-                <p className='break-time'>30s</p>
-                <p className='break-time'>40s</p>
-                <p className='break-time'>50s</p>
+                <p onClick={()=>addToDb('10s')} className='break-time'>10s</p>
+                <p onClick={()=>addToDb('20s')} className='break-time'>20s</p>
+                <p onClick={()=>addToDb('30s')} className='break-time'>30s</p>
+                <p onClick={()=>addToDb('40s')} className='break-time'>40s</p>
+                <p onClick={()=>addToDb('50s')} className='break-time'>50s</p>
             </div>
             <h3>Exercise Details</h3>
             <div className='time'>
