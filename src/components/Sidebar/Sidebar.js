@@ -4,11 +4,17 @@ import image from '../../images/munna.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocation } from '@fortawesome/free-solid-svg-icons';
 import { addToLocalDb } from '../Utilities/Localdb';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
-const Sidebar = () => {
-    const addToDb = (id) =>{
+const Sidebar = (props) => {
+    const {time} = props;
+    console.log(time)
+    const addToDb = (id, brtime) =>{
         addToLocalDb(id);
     }
+
+    const notify = () => toast("Congratulations!");
     return (
         
         <div>
@@ -35,11 +41,11 @@ const Sidebar = () => {
             </div>
             <h3>Add A Break</h3>
             <div className='break-list'>
-                <p onClick={()=>addToDb('10s')} className='break-time'>10s</p>
-                <p onClick={()=>addToDb('20s')} className='break-time'>20s</p>
-                <p onClick={()=>addToDb('30s')} className='break-time'>30s</p>
-                <p onClick={()=>addToDb('40s')} className='break-time'>40s</p>
-                <p onClick={()=>addToDb('50s')} className='break-time'>50s</p>
+                <p onClick={()=>addToDb('10s',10)} className='break-time'>10s</p>
+                <p onClick={()=>addToDb('20s',20)} className='break-time'>20s</p>
+                <p onClick={()=>addToDb('30s',30)} className='break-time'>30s</p>
+                <p onClick={()=>addToDb('40s',40)} className='break-time'>40s</p>
+                <p onClick={()=>addToDb('50s',50)} className='break-time'>50s</p>
             </div>
             <h3>Exercise Details</h3>
             <div className='time'>
@@ -48,7 +54,8 @@ const Sidebar = () => {
             <div className='time'>
                 <p>Break time <span>seconds</span></p>
             </div>
-            <button className='bnt-activity'>Activity Completed</button>
+            <button onClick={notify} className='bnt-activity'>Activity Completed</button>
+            <ToastContainer/>
         </div>
     );
 };
