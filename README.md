@@ -1,3 +1,9 @@
+Alpha Fitness club is a basic React app. This is my first react project. This project hosted in netlify.
+
+Live Link: https://genuine-axolotl-dff315.netlify.app/
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
